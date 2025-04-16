@@ -1,0 +1,11 @@
+sysdig_api_token: <your api token>
+region: us4
+fileName: john-report
+output_path: /Users/juancarlos.coto/Desktop/Python_Scripts/searchReports/
+query: |
+  MATCH KubeWorkload IN Zone
+    WHERE Zone.name IN ['Entire Infrastructure']  
+  MATCH KubeWorkload HAS Container AFFECTED_BY Vulnerability
+    WHERE Vulnerability.severity <= 'Medium' AND Vulnerability.hasExploit = true AND Vulnerability.inUse = true
+    RETURN KubeWorkload.name, Vulnerability, Vulnerability.epssScore, Container.imageReference
+    ORDER BY Vulnerability.severity ASC;

@@ -31,3 +31,5 @@ pip3 install -r requirements.txt
 
 ![](imgs/crontab.png)
 
+
+If you want to know more about search, please visit the [Sysdig Search Docs](https://docs.sysdig.com/en/sysdig-secure/search/)

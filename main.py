@@ -90,8 +90,7 @@ if __name__ == "__main__":
     base_url = get_base_url(region)
 
     date_str = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    base, ext = os.path.splitext(file_name)
-    file_name_with_date = f"{base}_{date_str}{ext}"
+    file_name_with_date = f"{file_name}_{date_str}" + '.csv'
 
     try:
         report_file_id = trigger_report(base_url, token, file_name, query)

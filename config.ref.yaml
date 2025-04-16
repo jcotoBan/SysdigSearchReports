@@ -1,11 +1,5 @@
 sysdig_api_token: <your api token>
-region: us4
-fileName: john-report
-output_path: /Users/juancarlos.coto/Desktop/Python_Scripts/searchReports/
-query: |
-  MATCH KubeWorkload IN Zone
-    WHERE Zone.name IN ['Entire Infrastructure']  
-  MATCH KubeWorkload HAS Container AFFECTED_BY Vulnerability
-    WHERE Vulnerability.severity <= 'Medium' AND Vulnerability.hasExploit = true AND Vulnerability.inUse = true
-    RETURN KubeWorkload.name, Vulnerability, Vulnerability.epssScore, Container.imageReference
-    ORDER BY Vulnerability.severity ASC;
+region: <Your sysdig region> #Check https://docs.sysdig.com/en/docs/administration/saas-regions-and-ip-ranges/ for reference
+fileName: <file name of the csv report, date will be added>
+output_path: <output file you want to save your report csv file>
+query: | #You can add here your sysql query

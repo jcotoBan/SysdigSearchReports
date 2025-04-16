@@ -13,8 +13,12 @@ The Idea of this script is to automate the CSV generation from Sysql queries on 
 
 *The script assumes the config.yaml is on same folder, if not just change this line on the script:
 
+![](imgs/codeline.png)
 
-The Sysql query will be specified in the same way as on the UI. If you used the query builder, 
+
+The sysql query will be specified in the same way as on the UI. If you used the query builder, make sure to click on _Edit in Code Editor_ to get the sysql representation
+
+![](imgs/query_builder.png)
 
 
 2-Install the requirements.txt file:
@@ -24,4 +28,6 @@ pip3 install -r requirements.txt
 ```
 
 3-You can then run adhoc or in a crontab
+
+![](imgs/crontab.png)
 

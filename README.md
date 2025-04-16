@@ -1,6 +1,8 @@
-Disclaimer
+## Disclaimer
 
 This script uses Sysdig internal APIs that are meant to be used on the platform, there is no guarantee they will continue to work or that they wont change without notice. 
+
+## Guide
 
 The Idea of this script is to automate the CSV generation from Sysql queries on the Search module. The steps of running it are very simple:
 

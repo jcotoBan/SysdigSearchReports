@@ -8,10 +8,10 @@ The Idea of this script is to automate the CSV generation from Sysql queries on 
 
 ![](imgs/s_report_view.png)
 
-1- Edit the config.ref.yaml, add the required fields and rename to config.yaml:
+1- Edit the __config.ref.yaml__, add the required fields and rename to config.yaml:
 
 
-*The script assumes the config.yaml is on same folder, if not just change this line on the script:
+__*The script assumes the config.yaml is on same folder, if not just change this line on the script__:
 
 ![](imgs/codeline.png)
 

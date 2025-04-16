@@ -17,9 +17,9 @@ The Sysql query will be specified in the same way as on the UI. If you used the 
 
 2-Install the requirements.txt file:
 
-'''
+```
 pip3 install -r requirements.txt
-'''
+```
 
 3-You can then run adhoc or in a crontab
 

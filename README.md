@@ -6,7 +6,7 @@ This script uses Sysdig internal APIs that are meant to be used on the platform,
 
 The Idea of this script is to automate the CSV generation from Sysql queries on the Search module. The steps of running it are very simple:
 
-
+![](imgs/s_report_view.png)
 
 1- Edit the config.ref.yaml, add the required fields and rename to config.yaml:
 
